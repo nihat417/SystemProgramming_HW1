@@ -4,11 +4,13 @@ namespace SystemProgramming_HW1;
 
 public partial class Form1 : Form
 {
-    Process process=new Process();
     public Form1()
     {
         InitializeComponent();
         FillProcess();
+        FormBorderStyle = FormBorderStyle.FixedSingle;
+        MaximizeBox = false;
+        StartPosition = FormStartPosition.CenterScreen;
     }
 
     private void FillProcess()
